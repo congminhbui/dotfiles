@@ -1,0 +1,94 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: "FontAwesome", "JetBrainsMono Nerd Font Propo";
+  font-weight: 700;
+  font-size: 13px;
+  min-height: 0;
+}
+
+#waybar {
+  background: rgba(15, 15, 23, 0.5);
+  color: #a1bdce;
+}
+
+tooltip {
+  background: #171717;
+  color: #a1bdce;
+  font-size: 13px;
+  border-radius: 7px;
+  border: 2px solid #101a24;
+}
+
+#workspaces {
+  margin: 5px;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  color: #a1bdce;
+  margin: 0 3px 0 3px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  transition: none;
+}
+
+#workspaces button.active {
+  color: black;
+  border-radius: 20px;
+  background-color: #abdeec;
+}
+
+#workspaces button.urgent {
+  color: black;
+  border-radius: 20px;
+  background-color: #ac4142;
+}
+
+#workspaces button:hover {
+  color: black;
+  background: #abdeec;
+  border-radius: 20px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: .5rem;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#tray,
+#clock,
+#pulseaudio,
+#network,
+#custom-power {
+  margin-right: 1rem;
+}
+
+#pulseaudio {
+  color: #9e86c8;
+}
+
+#network {
+  color: #b4c973;
+}
+
+#clock {
+  color: #6c99bb;
+}
+
+#custom-power {
+  color: #ac4142;
+  margin-right: 1rem;
+}
+
+#tray {
+  background-color: rgba(15, 15, 23, 0.9);
+  margin: 5px;
+  border-radius: 20px;
+  padding: 0 10px 0 10px;
+}
